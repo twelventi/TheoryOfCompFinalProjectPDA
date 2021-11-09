@@ -126,7 +126,7 @@ def PDA(input_str):
         #   corresponding rule, so set the new state to the state defined
         #   by the transition function
         ### Also, update the unread input. If the transition function has 
-        #   us read an input, then remove it from the unread input, otherwis
+        #   us read an input, then remove it from the unread input, otherwise
         #   keep it the same
         table["state"] = rules[key][0]
         table["unread_input"] = table["unread_input"][1:] if key[1] != 'e' else table["unread_input"]
